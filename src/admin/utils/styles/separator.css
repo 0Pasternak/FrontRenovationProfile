@@ -1,0 +1,19 @@
+.line-separator{
+    position: absolute;
+    /* left: 30%; */
+    z-index: 800;
+    /* top: 20px; */
+    padding-top: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .line-separator{
+        top: 20px;
+        position: relative;
+        left: 0px;
+        right: 0px;
+        /* top: 220px; */
+    }
+    
+}

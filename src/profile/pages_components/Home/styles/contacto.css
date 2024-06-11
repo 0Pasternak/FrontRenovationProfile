@@ -1,0 +1,266 @@
+.section-contact {
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+}
+
+.business-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-card {
+    width: 650px;
+    height: 320px;
+    background-color: #030302;
+    color: white;
+    border: 10px solid #947f65;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-card {
+    width: 648px;
+    height: 318px;
+    background-color: #947f65;
+    text-align: center;
+}
+
+.logo-card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        width: 80px;
+    }
+}
+
+.title-card {
+    font-family: 'CardFont';
+    letter-spacing: 16px;
+    font-size: 2rem;
+}
+
+.title-name {
+    font-family: 'CardFont';
+    margin: 10px 0px;
+}
+
+
+
+.services-section-card {
+    font-family: 'TextFont';
+
+    ul {
+        text-align: center;
+        list-style: none;
+
+        li {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    }
+}
+
+.service-card-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    ul {
+        list-style: none;
+
+        li {
+            font-size: 1rem;
+        }
+    }
+}
+
+.separator-line {
+    height: 100px;
+    width: 1px;
+    background-color: white;
+}
+
+.service-card-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.service-card-content {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    /* .inside-card {
+        width: 590px;
+        height: 318px;
+    } */
+
+}
+
+@media (max-width: 830px) {
+    .section-contact {
+        width: 100% !important;
+    }
+
+    .inside-card {
+        width: 99.5%;
+        height: 99.2%;
+    }
+
+    .logo-card {
+        margin-top: 30px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+
+
+    .title-name {
+        margin: 20px 0px;
+    }
+
+    .services-section-card {
+        ul {
+            li {
+                font-size: 0.8rem;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .separator-line {
+        height: 80px;
+
+    }
+
+
+
+
+    .service-card-sect {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        ul {
+            list-style: none;
+
+
+        }
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    .business-card {
+        height: 260px;
+    }
+
+
+    .logo-card {
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .title-name {
+        margin-top: 20px;
+    }
+
+    .title-card {
+        font-size: 1.2rem;
+    }
+
+    .title-name {
+        margin: 0px 0px;
+        font-size: 1.2rem;
+    }
+
+    .service-card-options {
+        font-size: 0.9rem;
+    }
+
+    .service-card-content {
+        ul {
+            li {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .services-section-card {
+        ul {
+            li {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .separator-line {
+        height: 80px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+
+    .business-card {
+        height: 180px;
+    }
+
+    .logo-card {
+        img {
+            width: 25px;
+        }
+    }
+
+    .logo-card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .title-card {
+        font-size: 0.8rem;
+    }
+
+    .title-name {
+        font-size: 0.8rem;
+    }
+
+    .service-card-options {
+        font-size: 0.7rem;
+    }
+
+    .service-card-content {
+        & ul {
+            li {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,265 @@
+.aboutUs {
+    width: 100%;
+    /* background-color: rgb(246, 246, 246); */
+    padding-top: 100px;
+}
+
+.aboutUs-container {
+    /* width: var(--max-width-page); */
+    max-width: 1600px;
+    margin: auto;
+    background-color: white;
+    padding-top: 50px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-content {
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+
+    height: 100px;
+    /* width: 100%; */
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 1px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.description-content {
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    p {
+        margin: 30px 0px;
+        max-width: 500px;
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+.description-container-img1,
+.description-container-img2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.img-lateral {
+    height: 100%;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.how-we-work {
+    max-width: 1600px;
+    margin: auto;
+
+}
+
+.presentation-text-container {
+    margin: 30px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.presentation-text {
+
+    max-width: 500px;
+
+}
+
+.work-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+
+.how-we-work {
+    max-width: 1600px;
+    margin: auto;
+
+    background: white;
+    padding: 50px 0px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-container {
+    display: flex;
+    width: 100%;
+
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+    justify-content: space-between;
+
+
+}
+
+.left-column {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.left-column::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.left-column-title {
+    z-index: 2;
+}
+
+.left-column p {
+    position: relative;
+    z-index: 2;
+    color: black;
+    max-width: 650px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    width: 100px;
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.circle.selected {
+    background-color: grey;
+}
+
+.title-how-we-work {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 20px 0px;
+
+}
+
+@media (max-width: 800px) {
+
+    .img-lateral {
+        display: none;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .left-column {
+        width: 90%;
+        margin-top: 80px;
+        height: 200px;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-column {
+        /* width: 20%; */
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .line {
+        position: absolute;
+        background-color: #000;
+        height: 2px;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .right-column {
+        gap: 30px;
+    }
+
+    .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: lightgrey;
+        transition: background-color 0.3s;
+        z-index: 10;
+    }
+
+}

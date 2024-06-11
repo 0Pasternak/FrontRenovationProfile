@@ -1,0 +1,96 @@
+.materials-list-container {
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.materials-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    table-layout: fixed;
+}
+
+.materials-table th,
+.materials-table td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.materials-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.materials-table td {
+    background-color: #fff;
+}
+
+.materials-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.materials-table .edit-button,
+.materials-table .delete-button,
+.materials-table .save-button-edit,
+.materials-table .cancel-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.materials-table .edit-button {
+    color: #007bff;
+}
+
+.materials-table .edit-button:hover {
+    color: #0056b3;
+}
+
+.materials-table .delete-button {
+    color: #dc3545;
+}
+
+.materials-table .delete-button:hover {
+    color: #c82333;
+}
+
+.materials-table .save-button-edit {
+    color: #28a745;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.materials-table .cancel-button {
+    color: #ffc107;
+}
+
+.materials-table .cancel-button:hover {
+    color: #e0a800;
+}
+
+.materials-table input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    display: none;
+}
+
+.materials-table .editing input {
+    display: block;
+}
+
+.materials-table td:first-child {
+    width: auto;
+}
+
+.edit-material-options {
+    display: flex;
+}

@@ -1,0 +1,177 @@
+.admin-nav {
+    font-family: 'TextFont';
+
+}
+
+.admin-menu-container {
+    width: 270px;
+    height: 100%;
+    background-color: #1d1e33;
+    z-index: 15;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transition: transform 0.5s ease;
+    padding-top: 60px;
+    padding: 60px 0px 0px 0px;
+    left: 0px;
+}
+
+.admin-profile-header {
+    display: flex;
+}
+
+.admin-icon {
+    font-size: 2rem;
+}
+
+#admin-menu-toggle {
+    top: 6px;
+}
+
+
+
+#admin-menu-toggle-close {
+    color: white;
+    position: fixed;
+    z-index: 20;
+    font-size: 2.5rem;
+    padding: 10px 25px;
+
+}
+
+#admin-menu-toggle-open {
+    color: black;
+    position: fixed;
+    z-index: 20;
+    font-size: 2.5rem;
+    padding: 5px 25px;
+
+}
+
+
+.nav-admin-profile-container {
+    border-bottom: 2px solid white;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+
+.admin-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0px 20px;
+}
+
+.icon-settings {
+    font-size: 1.6rem;
+}
+
+.admin-email-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+
+}
+
+.admin-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.admin-option-menu-list {
+    margin: 20px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    color: white;
+
+    gap: 20px;
+
+    li {
+        color: white;
+        /* background-color: #252850; */
+        padding: 10px 10px;
+        /* border-radius: 10px; */
+        /* width: 100%; */
+        cursor: pointer;
+
+    }
+
+}
+
+
+
+.admin-nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+    font-family: 'TextFont';
+    padding-left: 40px;
+
+
+
+}
+
+.sub-admin-nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+    font-family: 'TextFont';
+
+
+
+}
+
+.opt-icon-nav {
+    margin-right: 40px;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.admin-sub-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.admin-option-sub-menu-list {
+    margin: 20px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+        cursor: pointer;
+    }
+
+}
+
+.close-session-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.active-admin-menu {
+    transform: translateX(-100%) !important;
+
+}

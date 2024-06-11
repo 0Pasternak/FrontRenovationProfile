@@ -1,0 +1,39 @@
+.header-section {
+    height: 250px;
+    background-image: url('./../../../../assets/img/zonas-madrid-vivir.jpg');
+    margin-top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        font-size: 3rem;
+        font-family: 'TitleFontText2';
+        color: white;
+        text-shadow:
+            -1px -1px 0 var(--background-darck),
+            1px -1px 0 var(--background-darck),
+            -1px 1px 0 var(--background-darck),
+            1px 1px 0 var(--background-darck);
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+    .header-section {
+        height: 180px;
+    }
+
+}

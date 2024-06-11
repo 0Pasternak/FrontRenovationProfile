@@ -1,0 +1,9 @@
+.table-data-container {
+    min-height: 1000px;
+}
+
+.admin-customers-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}

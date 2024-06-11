@@ -1,0 +1,149 @@
+.renovation-types-container {
+    /* width: var(--max-width-page); */
+    max-width: 1600px;
+    margin: auto;
+}
+
+.section-renovation-one-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.renovation-text {
+    width: 45%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.renovation-img {
+    width: 45%;
+    height: 350px;
+    border-radius: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-renovation-one,
+.section-renovation-two,
+.section-renovation-three {
+    margin-bottom: 100px;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-renovation-one,
+.section-renovation-three {
+    .title-renovation-section {
+        margin-left: 50px;
+    }
+}
+
+.section-renovation-two {
+    .title-renovation-section {
+        margin-right: 50px;
+
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.section-renovation-four {
+    padding: 50px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 1px 10px rgba(0, 0, 0, 0.1);
+
+    .title-renovation-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.section-renovation-more-services {
+    margin-top: 100px;
+    display: flex;
+}
+
+.img-more-services {
+    height: 200px;
+    width: 80%;
+    border-radius: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.renovation-text-more-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'TextFont';
+    font-size: 1.2rem;
+    gap: 20px;
+
+    p {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+.renovation-text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'TextFont';
+    font-size: 1.2rem;
+}
+
+.budget-button-section {
+    margin-top: 20px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bolder;
+    background-color: #7E6752;
+    cursor: pointer;
+    font-family: 'TextFont';
+}
+
+
+
+
+@media (max-width: 991px) {
+    .section-renovation-one-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .renovation-text {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .renovation-img {
+        margin-top: 60px;
+        width: 100%;
+        border-radius: 0px;
+        height: 150px;
+    }
+
+    .section-renovation-more-services {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+}

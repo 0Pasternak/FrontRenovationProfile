@@ -1,0 +1,110 @@
+.admin-profile-section {
+    background-color: rgb(245, 245, 245);
+    /* height: 100vh; */
+    height: 100%;
+}
+
+
+.admin-profile-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* .admin-custoemrs-nav {
+    height: 60px;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+    background-color: white;
+    padding: 0px 40px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    z-index: 10;
+} */
+
+.admin-profile-main {
+    padding-top: 60px;
+    /* height: 100vh; */
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+.table-data-container {
+    width: 100%;
+    /* height: 500px; */
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+/* .button-lista-clientes {
+    height: 200px;
+    width: 100px;
+    background-color: #3a72af; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 14px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+} */
+
+.budget-anotation-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.budget-sumary-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.sumary-sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.anotaciones-area {
+    width: 100%;
+    height: 200px;
+}
+
+.section-sumary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-anotation {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.budget-title-editor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}

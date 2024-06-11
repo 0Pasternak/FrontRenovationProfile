@@ -1,0 +1,270 @@
+/*
+================================================================
+=                         Nav Main                             =
+================================================================
+*/
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+/*
+================================================================
+=                       Header Nav                             =
+================================================================
+*/
+
+.top-nav {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-darck-light);
+}
+
+.top-nav-list {
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav-list li {
+    color: var(--second-text-color);
+}
+
+.first-top-content {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-lenguage {
+    position: relative;
+}
+
+.cotact-content-mainNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-lenguage:hover .nav-lenguage-list,
+.nav-lenguage-list:hover {
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    right: -18px;
+}
+
+.nav-lenguage-list {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-lenguage-list li {
+    color: var(--second-text-color);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-lenguage-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-lenguage-list li {
+    display: flex;
+    color: black;
+    gap: 10px;
+}
+
+.nav-lenguage-list li img {
+    width: 20px;
+}
+
+.phone-link,
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+
+.phone-link:visited,
+.email-link:visited,
+.phone-link:hover,
+.email-link:hover,
+.phone-link:active,
+.email-link:active,
+.phone-link:focus,
+.email-link:focus {
+    color: white;
+    text-decoration: none;
+}
+
+/*
+================================================================
+=                         Main Nav                             =
+================================================================
+*/
+
+.main-nav {
+    width: 100%;
+    background-color: #442e1d;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-content {
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo-container {
+    font-size: 60px;
+    position: relative;
+    top: 8px;
+    font-size: 3rem;
+}
+
+.nav-logo-container img {
+    width: 70px;
+}
+
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.main-nav-list li {
+
+    font-size: 1.3rem;
+    font-family: 'TitleFontText2';
+    position: relative;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.main-nav-list li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.2s ease, left 0.2s ease;
+}
+
+.main-nav-list li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.main-nav-list>li:first-child::after {
+    content: none;
+}
+
+.route-nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.route-nav-link.active {
+    color: #d3b98e;
+
+}
+
+#open-nav-toggle,
+.nav-convent-close-toggle {
+    font-size: 40px;
+    display: none;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*
+================================================================
+=                       Responsive                             =
+================================================================
+*/
+
+@media (max-width: 991px) {
+    .main-nav {
+        height: 100px;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 60px;
+        transform: translateX(100%);
+        position: fixed;
+        background-color: var(--background-darck-light);
+        height: 100%;
+        height: 100vh;
+        top: 0;
+        width: 250px;
+        padding-top: 50px;
+        transition: transform 0.5s ease;
+        right: -250px;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .main-nav-list.active-menu {
+        transform: translateX(0);
+        right: 0;
+    }
+
+    #open-nav-toggle,
+    #close-nav-toggle {
+        font-size: 40px;
+        display: block;
+        color: white;
+    }
+
+    .nav-convent-close-toggle {
+        display: block;
+    }
+
+    #close-nav-toggle {
+        color: var(--second-text-color);
+    }
+}
+
+@media (max-width: 550px) {
+    .phone-link .phone-data {
+        display: none;
+    }
+
+    .email-link .email-data {
+        display: none;
+    }
+}

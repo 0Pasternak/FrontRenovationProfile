@@ -1,0 +1,33 @@
+.budget-title-editor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.button-budget-container {
+    display: flex;
+    gap: 20px;
+}
+
+.budget-button-edit {
+    background-color: rgb(78, 114, 255);
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+
+
+}
+
+.budget-button-save {
+
+    background-color: rgb(78, 114, 255);
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+
+}

@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'TitleFontText';
+    src: url('./assets/fonts/Kanit/Kanit-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TitleFontText2';
+    src: url('./assets/fonts/Kanit/Kanit-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TextFont';
+    src: url('./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CardFont';
+    src: url('./assets/fonts/Platypi/Platypi-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+
+
+:root {
+    /* colores */
+
+    --background-darck: #000000;
+    --background-darck-light: #131313;
+
+    --background-palette-darck-brown: #634832;
+
+    --first-text-color:#000000;
+    --second-text-color: #ffffff;
+    --text-resalt:#967d3d;
+
+    /* tamaños */
+
+    --max-width-page: 80%;
+
+
+    --tablet-size: 1050px;
+
+
+
+
+
+
+
+
+
+    --color-text: #ffffff;
+    --color-back: #112260;
+    --color-secundary: #4081D6;
+    --color-back-two: #D8D8D8;
+
+
+    /* --color-one: #0B266C; */
+
+
+    --color-two: #f0f0f0;
+    --color-three: #FFFFFF;
+
+
+
+
+
+
+    --color-six: #349B92;
+    --color-four: rgb(114, 19, 19);
+    --color-seven: #000000;
+
+    /*no tocar*/
+    --color-one: #ab9680;
+    --color-resalt: #967d3d;
+    --color-sub-one: #B6A491;
+    --color-five: #ab9680ad;
+}
+
+.text-line{
+    font-family: 'TextFont';
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.section {
+    width: 100%;
+    margin-top: 150px;
+    
 }

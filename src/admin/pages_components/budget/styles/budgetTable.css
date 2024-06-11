@@ -1,0 +1,83 @@
+.budget-list-table {
+    width: 100%;
+}
+
+.budget-table-head {
+    height: 60px;
+}
+
+.budget-table-head-row th {
+    text-align: center;
+}
+
+.budget-table-body-row {
+    height: 60px;
+    text-align: center;
+}
+
+.budget-table-body-row.even {
+    background-color: #f2f2f2;
+    /* Gris claro */
+}
+
+.budget-table-body-row.odd {
+    background-color: #ffffff;
+    /* Blanco */
+}
+
+.status-box {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.status-box.activo {
+    background-color: green;
+}
+
+.status-box.pendiente {
+    background-color: orange;
+}
+
+.status-box.finalizado {
+    background-color: grey;
+}
+
+.status-box.suspendido {
+    background-color: red;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button.active {}
+
+@media (max-width: 700px) {
+    .direction {
+        display: none;
+    }
+
+    .budget-table-head-row th {
+        font-size: 1rem;
+    }
+
+    .budget-table-body-row td {
+        font-size: 0.8rem;
+    }
+}

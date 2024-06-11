@@ -1,0 +1,40 @@
+.customer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.customer-form div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customer-form label {
+    align-self: flex-start;
+}
+
+.customer-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.customer-form button {
+    width: 80%;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.customer-form button:hover {
+    background-color: #0056b3;
+}

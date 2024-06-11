@@ -1,0 +1,30 @@
+.budget-details-table{
+    width: 100%;
+}
+.budget-details-header{
+    height: 60px;
+
+}
+.budget-details-body {
+    tr {
+        text-align: center;
+    }
+
+}
+.budget-details-body-row {
+    height: 60px;
+    background-color: aliceblue;
+}
+
+@media(max-width: 700px) {
+   
+
+    .budget-details-header-row th{
+        font-size: 1rem;
+    }
+
+    .budget-details-body-row td {
+        font-size: 0.8rem;
+    }
+
+}

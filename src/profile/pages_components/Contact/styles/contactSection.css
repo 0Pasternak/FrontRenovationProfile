@@ -1,0 +1,172 @@
+.c-budget-request {
+    /* position: absolute; */
+    right: 10%;
+    top: 270px;
+    background-color: var(--color-one);
+    border-radius: 80px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.5),
+        inset 0px 30px 40px -45px rgba(0, 0, 0, 0.5);
+    gap: 20px;
+    width: 400px;
+}
+
+.c-contactSection-container-main {
+    width: var(--max-width-page);
+    max-width: 1600px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.c-budget-request-title {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    width: 360px;
+    text-align: center;
+}
+
+.c-budget-request-input {
+    background-color: #ece0d1;
+    padding: 10px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+    font-size: 1.2rem;
+    font-family: 'TextFont';
+}
+
+.c-form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.c-budget-request-textarea {
+    background-color: #ece0d1;
+    padding: 10px 10px;
+    width: 100%;
+    border: none !important;
+    font-size: 1rem;
+}
+
+.c-relevant {
+    font-weight: bolder;
+    color: white;
+    font-family: 'TextFont';
+}
+
+.c-contact-sect-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-sub-one);
+    border-radius: 0 0px 80px 0px;
+    font-family: 'TextFont';
+}
+
+.c-phone-icon {
+    font-size: 2rem;
+}
+
+.c-contact-sect-form p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'TitleFontText';
+    line-height: 1.2em;
+}
+
+.c-budget-request form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+.c-budget-request form textarea {
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 8px;
+    font-family: 'TextFont';
+}
+
+.c-budget-request form button {
+    margin-top: 20px;
+    width: 80%;
+    border: none;
+    padding: 20px 10px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bolder;
+    background-color: #7e6752;
+    cursor: pointer;
+    font-family: 'TextFont';
+}
+
+.c-budget-request form label {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (max-width: 1050px) {
+    .c-budget-request {
+        top: 340px;
+        right: 0px;
+        left: 50%;
+        /* transform: translateX(-50%); */
+        width: 500px;
+    }
+
+    .c-form-content {
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .c-budget-request {
+        top: 350px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .c-contactSection-container-main {
+        width: 100%;
+        max-width: 1600px;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-form-content {
+        width: 280px;
+    }
+
+    .c-budget-request form {
+        width: 280px;
+    }
+
+    .c-budget-request-title {
+        width: 280px;
+    }
+
+    .c-budget-request form button {
+        width: 100%;
+    }
+}
