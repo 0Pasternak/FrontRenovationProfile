@@ -8,6 +8,8 @@ import ServicesEditorPage from "../pages_components/PageEditor/ServicesEditorPag
 import AboutUsEditorPage from "../pages_components/PageEditor/AboutUsEditorPage";
 import MyWorkEditorPage from "../pages_components/PageEditor/MyWorkEditorPage";
 
+import { GrNewWindow } from "react-icons/gr";
+
 const PageEditor = () => {
   const [activeTab, setActiveTab] = useState("inicio");
 
@@ -53,16 +55,19 @@ const PageEditor = () => {
         <div className="admin-profile-main">
           <div className="options-stats-container">
             <div className="option-customer-one">
-              <div className="option-customer-admin">
-                <button onClick={handleFetchTranslations}>
-                  Fetch Translations
-                </button>
-              </div>
+              <div className="option-customer-admin"></div>
               <div className="option-customer-admin"></div>
             </div>
             <div className="option-customer-two">
               <div className="option-customer-admin"></div>
-              <div className="option-customer-admin"></div>
+              <div className="option-customer-admin">
+                <div className="add-customer-container">
+                  <GrNewWindow
+                    className="add-icon"
+                    onClick={handleFetchTranslations}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

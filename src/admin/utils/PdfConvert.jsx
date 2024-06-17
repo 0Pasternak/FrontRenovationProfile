@@ -44,9 +44,9 @@ const PdfConvert = ({ budget }) => {
   const renderUnitPrice = (line) => {
     const lineMaterials = materials[line.budgetTableLineId] || [];
     if (line.lineType === "SINGLE" && lineMaterials.length > 0) {
-      return `$${lineMaterials[0].unitPrice.toFixed(2)}`;
+      return `€${lineMaterials[0].unitPrice.toFixed(2)}`;
     }
-    return line.unitPrice ? `$${line.unitPrice.toFixed(2)}` : "-";
+    return line.unitPrice ? `€${line.unitPrice.toFixed(2)}` : "-";
   };
 
   const renderTotalUnits = (line) => {
@@ -66,13 +66,13 @@ const PdfConvert = ({ budget }) => {
   const renderTotalPrice = (line) => {
     const lineMaterials = materials[line.budgetTableLineId] || [];
     if (line.lineType === "SINGLE" && lineMaterials.length > 0) {
-      return `$${lineMaterials[0].totalPrice.toFixed(2)}`;
+      return `€${lineMaterials[0].totalPrice.toFixed(2)}`;
     } else if (line.lineType === "SUMMARY" && lineMaterials.length > 0) {
       const totalPrice = lineMaterials.reduce(
         (sum, material) => sum + material.totalPrice,
         0
       );
-      return `$${totalPrice.toFixed(2)}`;
+      return `€${totalPrice.toFixed(2)}`;
     }
     return "-";
   };
@@ -129,7 +129,7 @@ const PdfConvert = ({ budget }) => {
 
     const totalPrice = lines.reduce(
       (sum, line) =>
-        sum + (parseFloat(renderTotalPrice(line).replace("$", "")) || 0),
+        sum + (parseFloat(renderTotalPrice(line).replace("€", "")) || 0),
       0
     );
 
@@ -154,7 +154,7 @@ const PdfConvert = ({ budget }) => {
             styles: { halign: "left", fillColor: [220, 220, 220] },
           },
           {
-            content: `$${totalPrice.toFixed(2)}`,
+            content: `€${totalPrice.toFixed(2)}`,
             styles: { halign: "right", fillColor: [255, 255, 255] },
           },
         ],

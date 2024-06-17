@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 
 import "./styles/renovationTypes.css";
 
+import { Link } from "react-router-dom";
+
 function RenovationTypes() {
   const { t } = useTranslation();
 
@@ -33,9 +35,9 @@ function RenovationTypes() {
             <div className="renovation-text">
               <p>{t("text_services_text2")}</p>
               <div>
-                <button className="budget-button-section">
-                  {t("budget_button")}
-                </button>
+                <Link to="/contact" className="budget-button-section">
+                  <button>{t("budget_button")}</button>
+                </Link>
               </div>
             </div>
             <div className="renovation-img" style={headerStyle.cardft1}></div>
@@ -50,9 +52,9 @@ function RenovationTypes() {
             <div className="renovation-text">
               <p>{t("text_services_text4")}</p>
               <div>
-                <button className="budget-button-section">
-                  {t("budget_button")}
-                </button>
+                <Link to="/contact" className="budget-button-section">
+                  <button>{t("budget_button")}</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -65,9 +67,9 @@ function RenovationTypes() {
             <div className="renovation-text">
               <p>{t("text_services_text6")}</p>
               <div>
-                <button className="budget-button-section">
-                  {t("budget_button")}
-                </button>
+                <Link to="/contact" className="budget-button-section">
+                  <button>{t("budget_button")}</button>
+                </Link>
               </div>
             </div>
             <div className="renovation-img" style={headerStyle.cardft3}></div>
@@ -85,9 +87,9 @@ function RenovationTypes() {
               ></div>
               <p>{t("text_services_text8")}</p>
               <div>
-                <button className="budget-button-section">
-                  {t("budget_button")}
-                </button>
+                <Link to="/contact" className="budget-button-section">
+                  <button>{t("budget_button")}</button>
+                </Link>
               </div>
             </div>
             <div className="renovation-text-more-services">
@@ -97,9 +99,9 @@ function RenovationTypes() {
               ></div>
               <p>{t("text_services_text9")}</p>
               <div>
-                <button className="budget-button-section">
-                  {t("budget_button")}
-                </button>
+                <Link to="/contact" className="budget-button-section">
+                  <button>{t("budget_button")}</button>
+                </Link>
               </div>
             </div>
             <div className="renovation-text-more-services">
@@ -109,9 +111,9 @@ function RenovationTypes() {
               ></div>
               <p>{t("text_services_text10")}</p>
               <div>
-                <button className="budget-button-section">
-                  {t("budget_button")}
-                </button>
+                <Link to="/contact" className="budget-button-section">
+                  <button>{t("budget_button")}</button>
+                </Link>
               </div>
             </div>
           </div>

@@ -108,3 +108,20 @@
     padding: 20px;
     border-radius: 10px 10px 0px 0px;
 }
+
+.option-customer-admin-unique {
+    width: 200px;
+    height: 100px;
+    background-color: #1D1E33;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.option-customer-admin-unique svg {
+    font-size: 40px;
+    color: white;
+}

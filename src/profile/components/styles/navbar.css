@@ -48,6 +48,9 @@
 
 .nav-lenguage {
     position: relative;
+    display: flex;
+    gap: 20px;
+
 }
 
 .cotact-content-mainNav {
@@ -57,7 +60,7 @@
     gap: 10px;
 }
 
-.nav-lenguage:hover .nav-lenguage-list,
+.nav-lenguage2:hover .nav-lenguage-list,
 .nav-lenguage-list:hover {
     display: block;
     position: absolute;

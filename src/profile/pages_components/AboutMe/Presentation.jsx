@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 
 import "./styles/presentation.css";
 
+import { Link } from "react-router-dom";
+
 function Presentation() {
   const [selected, setSelected] = useState(1);
   const { t } = useTranslation();
@@ -83,9 +85,9 @@ function Presentation() {
             </div>
             <p>{generalTexts[5]}</p>
             <div className="presentation-buttons">
-              <button className="budget-button-section">
-                {t("budget_button")}
-              </button>
+              <Link to="/contact" className="budget-button-section">
+                <button>{t("budget_button")}</button>
+              </Link>
             </div>
           </div>
           <div>

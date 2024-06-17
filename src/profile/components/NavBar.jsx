@@ -10,6 +10,7 @@ import spainSVG from "./../../assets/svg/spain.svg";
 import unitedKingdomSVG from "./../../assets/svg/united-kingdom.svg";
 import logoSVG from "./../../assets/svg/logo-tp-light.svg";
 import { useTranslation } from "react-i18next";
+import { FaUser } from "react-icons/fa";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,19 +68,32 @@ const NavBar = () => {
             </li>
           </div>
           <div className="nav-lenguage">
-            <li className="cotact-content-mainNav">
-              <BsTranslate />
-              {t("nav_lenguage")} <i className="arrow down"></i>
-            </li>
-            <ul className="nav-lenguage-list">
-              <li onClick={() => changeLanguage("en")}>
-                <img src={unitedKingdomSVG} alt="English" />
-                English
+            <div>
+              <NavLink
+                to="/login"
+                className={({ isActive }) =>
+                  `route-nav-link ${isActive ? "active" : ""}`
+                }
+                onClick={toggleMenu}
+              >
+                <FaUser />
+              </NavLink>
+            </div>
+            <div className="nav-lenguage2">
+              <li className="cotact-content-mainNav">
+                <BsTranslate />
+                {t("nav_lenguage")} <i className="arrow down"></i>
               </li>
-              <li onClick={() => changeLanguage("es")}>
-                <img src={spainSVG} alt="Español" /> Español
-              </li>
-            </ul>
+              <ul className="nav-lenguage-list">
+                <li onClick={() => changeLanguage("en")}>
+                  <img src={unitedKingdomSVG} alt="English" />
+                  English
+                </li>
+                <li onClick={() => changeLanguage("es")}>
+                  <img src={spainSVG} alt="Español" /> Español
+                </li>
+              </ul>
+            </div>
           </div>
         </ul>
       </div>

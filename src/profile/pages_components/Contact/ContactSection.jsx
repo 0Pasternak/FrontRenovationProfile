@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { BsPhoneFill } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 
+import { Link } from "react-router-dom";
+
 function ContactSection() {
   const { t } = useTranslation();
   const form = useRef();
@@ -59,9 +61,9 @@ function ContactSection() {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="c-budget-request-button">
-              {t("budget_button")}
-            </button>
+            <Link to="/contact" className="budget-button-section">
+              <button>{t("budget_button")}</button>
+            </Link>
           </form>
           <div className="c-contact-sect-form">
             <BsPhoneFill className="c-phone-icon" />
